@@ -6,12 +6,23 @@ package com.myspace.contentintegration;
 
 public class Test implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Test() {
-    }
+	private java.lang.String name;
 
+	public Test() {
+	}
 
+	public java.lang.String getName() {
+		return this.name;
+	}
 
+	public void setName(java.lang.String name) {
+		this.name = name;
+	}
+
+	public Test(java.lang.String name) {
+		this.name = name;
+	}
 
 }
