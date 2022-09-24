@@ -10,6 +10,8 @@ public class Test implements java.io.Serializable {
 
 	private java.lang.String name;
 
+	private java.lang.String age;
+
 	public Test() {
 	}
 
@@ -21,8 +23,17 @@ public class Test implements java.io.Serializable {
 		this.name = name;
 	}
 
-	public Test(java.lang.String name) {
+	public java.lang.String getAge() {
+		return this.age;
+	}
+
+	public void setAge(java.lang.String age) {
+		this.age = age;
+	}
+
+	public Test(java.lang.String name, java.lang.String age) {
 		this.name = name;
+		this.age = age;
 	}
 
 }
